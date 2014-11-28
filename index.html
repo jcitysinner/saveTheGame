@@ -3,6 +3,8 @@
 <head>
 	<title>Save The Game</title>
 	<link rel="stylesheet" type="text/css" href="style.css">
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+	<script src='main.js'></script>
 </head>
 <body>
 
@@ -11,34 +13,53 @@
 			<img src='images/logo.svg'>
 		</nav>
 	</div>
+
 	<div id='xboxOne'>
 		<div class='container'>
 			<h2>Xbox One</h2>
+			<div id="xboxOneList"></div>
+			<script src="http://api.remix.bestbuy.com/v1/products(categoryPath.name=xbox%20One*&onSale=true)?show=name,regularPrice,salePrice,shortDescription,image,categoryPath.name&format=json&callback=list&apiKey=85vb3fgey3wbc4udvta68x6a">
+			</script>
 		</div>
 	</div>
 	<div id='ps4'>
 		<div class='container'>
 			<h2>Playstation 4</h2>
+			<div id="ps4List"></div>
+			<script src="http://api.remix.bestbuy.com/v1/products(categoryPath.name=ps4*&onSale=true)?show=name,regularPrice,salePrice,shortDescription,image,categoryPath.name&format=json&callback=list&apiKey=85vb3fgey3wbc4udvta68x6a">
+			</script>
 		</div>
 	</div>
 	<div id='wiiU'>
 		<div class='container'>
 			<h2>Wii U</h2>
+			<div id="wiiUList"></div>
+			<script src="http://api.remix.bestbuy.com/v1/products(categoryPath.name=wii%20u*&onSale=true)?show=name,regularPrice,salePrice,shortDescription,image,categoryPath.name&format=json&callback=list&apiKey=85vb3fgey3wbc4udvta68x6a">
+			</script>
 		</div>
 	</div>
 	<div id='xbox360'>
 		<div class='container'>
 			<h2>Xbox 360</h2>
+			<div id="xbox360List"></div>
+			<script src="http://api.remix.bestbuy.com/v1/products(categoryPath.name=xbox%20360*&onSale=true)?show=name,regularPrice,salePrice,shortDescription,image,categoryPath.name&format=json&callback=list&apiKey=85vb3fgey3wbc4udvta68x6a">
+			</script>
 		</div>
 	</div>
 	<div id='ps3'>
 		<div class='container'>
 			<h2>Playstation 3</h2>
+			<div id="ps3List"></div>
+			<script src="http://api.remix.bestbuy.com/v1/products(categoryPath.name=ps3*&onSale=true)?show=name,regularPrice,salePrice,shortDescription,image,categoryPath.name&format=json&callback=list&apiKey=85vb3fgey3wbc4udvta68x6a">
+			</script>
 		</div>
 	</div>
 	<div id='wii'>
 		<div class='container'>
 			<h2>Wii</h2>
+			<div id="wiiList"></div>
+			<script src="http://api.remix.bestbuy.com/v1/products(categoryPath.name=wii*&onSale=true)?show=name,regularPrice,salePrice,shortDescription,image,categoryPath.name&format=json&callback=list&apiKey=85vb3fgey3wbc4udvta68x6a">
+			</script>
 		</div>
 	</div>
 	

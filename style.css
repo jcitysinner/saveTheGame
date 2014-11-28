@@ -1,4 +1,15 @@
 @import url(http://fonts.googleapis.com/css?family=Open+Sans:400,300,700);
+* {
+  -webkit-box-sizing: border-box;
+  /* Safari/Chrome, other WebKit */
+
+  -moz-box-sizing: border-box;
+  /* Firefox, other Gecko */
+
+  box-sizing: border-box;
+  /* Opera/IE 8+ */
+
+}
 body {
   padding: 0;
   margin: 0;
@@ -8,14 +19,40 @@ body {
   background-color: #333;
 }
 h2 {
-  font-weight: 700;
+  font-weight: 400;
   text-transform: uppercase;
+  margin-left: 1%;
 }
 .container {
   max-width: 1190px;
   width: 100%;
   margin: auto;
   padding: 10px 25px;
+}
+.product {
+  display: inline-block;
+  width: 23%;
+  margin: 0 1%;
+  padding: 1%;
+  border: solid 1px #fff;
+  border-radius: 5px;
+  background-color: #fff;
+  color: #333;
+  vertical-align: top;
+  text-align: center;
+  margin-bottom: 15px;
+}
+.product .salePrice {
+  color: #e74c3c;
+}
+.product .badDeal {
+  color: #e74c3c;
+}
+.product .okDeal {
+  color: #f1c40f;
+}
+.product .goodDeal {
+  color: #2ecc71;
 }
 #header {
   background-color: #333;
@@ -25,19 +62,38 @@ h2 {
 }
 #xboxOne {
   background-color: #107c10;
+  text-align: justify;
+}
+#xboxOne .regularPrice {
+  color: #107c10;
 }
 #ps4 {
   background-color: #0068bf;
 }
+#ps4 .regularPrice {
+  color: #0068bf;
+}
 #wiiU {
   background-color: #00beff;
+}
+#wiiU .regularPrice {
+  color: #00beff;
 }
 #xbox360 {
   background-color: #a2c843;
 }
+#xbox360 .regularPrice {
+  color: #a2c843;
+}
 #ps3 {
   background-color: #5394ed;
 }
+#ps3 .regularPrice {
+  color: #5394ed;
+}
 #wii {
   background-color: #0096c8;
+}
+#wii .regularPrice {
+  color: #0096c8;
 }
