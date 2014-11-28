@@ -33,7 +33,7 @@ h2 {
   display: inline-block;
   width: 23%;
   margin: 0 1%;
-  padding: 1%;
+  padding: 10px;
   border: solid 1px #fff;
   border-radius: 5px;
   background-color: #fff;
@@ -57,8 +57,43 @@ h2 {
 #header {
   background-color: #333;
 }
+#header nav {
+  overflow: hidden;
+}
 #header nav img {
   height: 30px;
+  float: left;
+}
+#header nav ul {
+  padding: 0;
+  float: right;
+  margin: 0;
+  height: 30px;
+}
+#header nav ul li {
+  display: inline-block;
+  margin-left: 25px;
+  vertical-align: -webkit-baseline-middle;
+}
+#header nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  transition: all 0.5s;
+}
+#header nav ul li:first-child a:hover {
+  color: #107c10;
+}
+#header nav ul li:nth-child(2) a:hover {
+  color: #0068bf;
+}
+#header nav ul li:nth-child(3) a:hover {
+  color: #00beff;
+}
+#header nav ul li:nth-child(4) a:hover {
+  color: #a2c843;
+}
+#header nav ul li:nth-child(5) a:hover {
+  color: #5394ed;
 }
 #xboxOne {
   background-color: #107c10;
@@ -67,11 +102,39 @@ h2 {
 #xboxOne .regularPrice {
   color: #107c10;
 }
+#xboxOne a {
+  display: block;
+  width: 100;
+  padding: 10px 0;
+  border: solid 1px #107c10;
+  color: #107c10;
+  text-decoration: none;
+  border-radius: 7px;
+  transition: all 0.5s;
+}
+#xboxOne a:hover {
+  color: white;
+  background-color: #107c10;
+}
 #ps4 {
   background-color: #0068bf;
 }
 #ps4 .regularPrice {
   color: #0068bf;
+}
+#ps4 a {
+  display: block;
+  width: 100;
+  padding: 10px 0;
+  border: solid 1px #0068bf;
+  color: #0068bf;
+  text-decoration: none;
+  border-radius: 7px;
+  transition: all 0.5s;
+}
+#ps4 a:hover {
+  color: white;
+  background-color: #0068bf;
 }
 #wiiU {
   background-color: #00beff;
@@ -79,11 +142,39 @@ h2 {
 #wiiU .regularPrice {
   color: #00beff;
 }
+#wiiU a {
+  display: block;
+  width: 100;
+  padding: 10px 0;
+  border: solid 1px #00beff;
+  color: #00beff;
+  text-decoration: none;
+  border-radius: 7px;
+  transition: all 0.5s;
+}
+#wiiU a:hover {
+  color: white;
+  background-color: #00beff;
+}
 #xbox360 {
   background-color: #a2c843;
 }
 #xbox360 .regularPrice {
   color: #a2c843;
+}
+#xbox360 a {
+  display: block;
+  width: 100;
+  padding: 10px 0;
+  border: solid 1px #a2c843;
+  color: #a2c843;
+  text-decoration: none;
+  border-radius: 7px;
+  transition: all 0.5s;
+}
+#xbox360 a:hover {
+  color: white;
+  background-color: #a2c843;
 }
 #ps3 {
   background-color: #5394ed;
@@ -91,9 +182,67 @@ h2 {
 #ps3 .regularPrice {
   color: #5394ed;
 }
+#ps3 a {
+  display: block;
+  width: 100;
+  padding: 10px 0;
+  border: solid 1px #5394ed;
+  color: #5394ed;
+  text-decoration: none;
+  border-radius: 7px;
+  transition: all 0.5s;
+}
+#ps3 a:hover {
+  color: white;
+  background-color: #5394ed;
+}
 #wii {
   background-color: #0096c8;
 }
 #wii .regularPrice {
   color: #0096c8;
+}
+@media screen and (max-width: 950px) {
+  .product {
+    width: 31%;
+  }
+}
+@media screen and (max-width: 750px) {
+  #header nav img {
+    float: none;
+    width: 100%;
+  }
+  #header nav ul {
+    float: none;
+    width: 100%;
+    height: auto;
+    text-align: center;
+    padding: 2px 0;
+    border-top: solid 1px white;
+    border-bottom: solid 1px white;
+  }
+  #header nav ul li {
+    vertical-align: middle;
+    margin: 0 2%;
+    padding: 15px 0;
+  }
+  #header nav ul li a {
+    padding: 15px 0;
+  }
+}
+@media screen and (max-width: 600px) {
+  .product {
+    width: 48%;
+  }
+}
+@media screen and (max-width: 450px) {
+  .container {
+    padding: 10px;
+  }
+  .product {
+    width: 100%;
+  }
+  #header nav ul li a {
+    font-size: 14px;
+  }
 }

@@ -12,14 +12,15 @@ function list(root) {
 	  html.push('<p class="salePrice">Sale: ' + entry.salePrice + '</p>');
 	  html.push('<p class="salePercent">Percent Off: <span class="regularPrice">' + salePercent + '%</span></p>');
 	  if (salePercent < 25){
-	  	html.push('<p>Deal: <span class="badDeal">Bad Deal</span></p></div>');
+	  	html.push('<p>Deal: <span class="badDeal">Bad Deal</span></p>');
 	  }
 	  else if (salePercent <= 44 && salePercent >= 25){
-	  	html.push('<p>Deal: <span class="okDeal">Okay Deal</span></p></div>');
+	  	html.push('<p>Deal: <span class="okDeal">Okay Deal</span></p>');
 	  }
 	  else if (salePercent <= 100 && salePercent >= 45){
-	  	html.push('<p>Deal: <span class="goodDeal">Good Deal</span></p></div>');
+	  	html.push('<p>Deal: <span class="goodDeal">Good Deal</span></p>');
 	  }
+	  html.push('<a href="'+ entry.url +'" target="_blank">View on bestbuy.com</a></div>');
 	}
 	if (category == 'Xbox One'){
 		document.getElementById("xboxOneList").innerHTML = html.join("");	

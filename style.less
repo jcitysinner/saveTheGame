@@ -28,7 +28,7 @@ h2{
 	display: inline-block;
 	width: 23%;
 	margin: 0 1%;
-	padding: 1%;
+	padding: 10px;
 	border: solid 1px #fff;
 	border-radius: 5px;
 	background-color: #fff;
@@ -53,8 +53,42 @@ h2{
 #header{
 	background-color: #333;
 	nav{
+		overflow: hidden;
 		img{
 			height: 30px;
+			float: left;
+		}
+		ul{
+			padding: 0;
+			float: right;
+			margin: 0;
+			height: 30px;
+			li{
+				display: inline-block;
+				margin-left: 25px;
+				vertical-align: -webkit-baseline-middle;
+				a{
+					color: #fff;
+					text-decoration: none;
+					transition: all 0.5s;
+				}
+			}
+
+			li:first-child a:hover{
+				color: #107c10;
+			}
+			li:nth-child(2) a:hover{
+				color: #0068bf;
+			}
+			li:nth-child(3) a:hover{
+				color: #00beff;
+			}
+			li:nth-child(4) a:hover{
+				color: rgb(162, 200, 67);
+			}
+			li:nth-child(5) a:hover{
+				color: rgb(83, 148, 237);
+			}
 		}
 	}
 }
@@ -64,11 +98,39 @@ h2{
 	.regularPrice{
 		color: #107c10;
 	}
+	a{
+		display:block;
+		width: 100;
+		padding: 10px 0;
+		border: solid 1px #107c10;
+		color: #107c10;
+		text-decoration: none;
+		border-radius: 7px;
+		transition: all 0.5s;
+	}
+	a:hover{
+		color: white;
+		background-color: #107c10;
+	}
 }
 #ps4{
 	background-color: #0068bf;
 	.regularPrice{
 		color: #0068bf;
+	}
+	a{
+		display:block;
+		width: 100;
+		padding: 10px 0;
+		border: solid 1px #0068bf;
+		color: #0068bf;
+		text-decoration: none;
+		border-radius: 7px;
+		transition: all 0.5s;
+	}
+	a:hover{
+		color: white;
+		background-color: #0068bf;
 	}
 }
 #wiiU{
@@ -76,11 +138,39 @@ h2{
 	.regularPrice{
 		color: #00beff;
 	}
+	a{
+		display:block;
+		width: 100;
+		padding: 10px 0;
+		border: solid 1px #00beff;
+		color: #00beff;
+		text-decoration: none;
+		border-radius: 7px;
+		transition: all 0.5s;
+	}
+	a:hover{
+		color: white;
+		background-color: #00beff;
+	}
 }
 #xbox360{
 	background-color: rgb(162, 200, 67);
 	.regularPrice{
 		color: rgb(162, 200, 67);
+	}
+	a{
+		display:block;
+		width: 100;
+		padding: 10px 0;
+		border: solid 1px rgb(162, 200, 67);
+		color: rgb(162, 200, 67);
+		text-decoration: none;
+		border-radius: 7px;
+		transition: all 0.5s;
+	}
+	a:hover{
+		color: white;
+		background-color: rgb(162, 200, 67);
 	}
 }
 #ps3{
@@ -88,10 +178,85 @@ h2{
 	.regularPrice{
 		color: rgb(83, 148, 237);
 	}
+	a{
+		display:block;
+		width: 100;
+		padding: 10px 0;
+		border: solid 1px rgb(83, 148, 237);
+		color: rgb(83, 148, 237);
+		text-decoration: none;
+		border-radius: 7px;
+		transition: all 0.5s;
+	}
+	a:hover{
+		color: white;
+		background-color: rgb(83, 148, 237);
+	}
 }
 #wii{
 	background-color: #0096c8;
 	.regularPrice{
 		color: #0096c8;
+	}
+}
+
+
+@media screen and (max-width: 950px) {
+	.product{
+		width: 31%;
+	}
+}
+@media screen and (max-width: 750px) {
+	#header{
+		nav{
+			img{
+				float: none;
+				width: 100%;
+			}
+			ul{
+				float: none;
+				width: 100%;
+				height: auto;
+				text-align: center;
+				padding: 2px 0;
+				border-top: solid 1px white;
+				border-bottom: solid 1px white;
+				li{
+					vertical-align: middle;
+					margin: 0 2%;
+					padding: 15px 0;
+					a{
+						padding: 15px 0;
+					}
+				}
+			}
+		}
+	}
+}
+@media screen and (max-width: 600px) {
+	.product{
+		width: 48%;
+	}
+	
+}
+@media screen and (max-width: 450px) {
+	.container{
+		padding: 10px;
+	}
+	.product{
+		width: 100%;
+	}
+
+
+	#header{
+		nav{
+			ul{
+				li{
+					a{
+						font-size: 14px;
+					}
+				}
+			}
+		}
 	}
 }
